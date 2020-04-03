@@ -5,17 +5,22 @@ android {
     buildToolsVersion "29.0.2"
 
     defaultConfig {
-        applicationId "com.jeffmony.livesdk"
+        applicationId "com.jeffmony.demo"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
+
         externalNativeBuild {
             cmake {
-                cppFlags ""
+                cppFlags "-fexceptions"
+                abiFilters "x86","x86_64","armeabi-v7a","arm64-v8a"
             }
         }
+
     }
 
     buildTypes {
@@ -31,10 +36,17 @@ android {
             version "3.10.2"
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.android.support:design:23+'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.4'
+    implementation project(path: ':livesdk')
 }
