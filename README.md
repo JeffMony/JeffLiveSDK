@@ -31,7 +31,7 @@ Android 平台下的直播SDK
 > * gpuimage:CGAColor
 > * gpuimage:Crosshatch
 
-![](./files/test1_low.jpg)![](./files/test2_low.jpg)
+![](./files/test1_low.jpg)![](./files/test2_low.jpg)![](./files/test3_low.jpg)![](./files/test4_low.jpg)
 
 感谢的开源项目是：
 > * librestreaming
