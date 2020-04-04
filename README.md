@@ -36,3 +36,6 @@ Android 平台下的直播SDK
 感谢的开源项目是：
 > * librestreaming
 > * android-gpuimage
+
+**感谢关注公众号JeffMony，持续给你带来音视频方面的知识。**
+![](./files/JeffMony.jpg)
